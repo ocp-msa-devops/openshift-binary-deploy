@@ -10,3 +10,5 @@ else
   curl -k -u $WAR_FILE_USER:$WAR_FILE_PASSWORD -o $JBOSS_HOME/standalone/deployments/ROOT.war -O $WAR_FILE_URL
 fi
 
+# Call default assemble script
+/usr/local/s2i/assemble
